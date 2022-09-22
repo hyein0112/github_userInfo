@@ -52,16 +52,20 @@ function App() {
       }>Github</h1>
       <>
         <form css={css`
-          width: 70%;
+          width: 800px;
           margin-bottom: 10%;
           text-align: center;
+
+          @media ( max-width: 768px ) {
+          width: 90%;
+}
         `}
         onSubmit={onSubmit}
         >
           <input css={css`
             width: 70%;
             border: 3px solid #e0e0e0;
-            padding: 15px 30px;
+            padding: 10px 30px;
             border-radius: 50px;
             font-size: 1.3rem;
           `}
