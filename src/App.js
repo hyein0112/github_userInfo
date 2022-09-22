@@ -47,23 +47,21 @@ function App() {
       <h1 css={css`
         text-align: center;
         font-size: 4rem;
-        margin-top: 100px 0;
+        margin-bottom: 20px;
       `
       }>Github</h1>
       <>
         <form css={css`
-          width: 60%;
-          height: 50px;
-          padding-bottom: 200px;
+          width: 70%;
+          margin-bottom: 10%;
           text-align: center;
         `}
         onSubmit={onSubmit}
         >
           <input css={css`
-            height: 20px;
             width: 70%;
             border: 3px solid #e0e0e0;
-            padding: 30px;
+            padding: 15px 30px;
             border-radius: 50px;
             font-size: 1.3rem;
           `}
@@ -82,13 +80,13 @@ function App() {
             text-decoration: none;
             color: black;
             padding: 100px;
-            border-radius: 10px;
-            box-shadow: inset 0 0 10px 5px #ABABAB;
+            border-radius: 5%;
+            box-shadow: inset 0 0 20px 7px #ABABAB;
           `}
           href={info.url}
           target="_blank" rel="noreferrer"
           >
-            <img src={info.avatar} alt="프로필 사진" width='200px'></img><br />
+            <img css={css`border-radius: 50%;`}src={info.avatar} alt="프로필 사진" width='50%'></img><br />
             <p css={css`text-align:center; margin: 0 auto;`}>
             {info.name}<br /> bio: {info.bio} follwers: {info.followers} follwing: {info.following}
             </p>
